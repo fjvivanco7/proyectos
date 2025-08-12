@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offseting</title>
+    <style>
+        .row {
+            background: #f2f2f2;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        .columna {
+            background: rgba(52, 34, 255, 0.097);
+            text-align: center;
+            padding: 10px;
+            border: 1px solid rgb(221, 160, 68);
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row ">
+            <div class="columna col-auto offset-1">
+                Columna #1
+            </div>
+        </div>
+        <div class="row ">
+            <div class="columna col-auto offset-4">
+                Columna #2
+            </div>
+        </div>
+        <div class="row ">
+            <div class="columna col-auto offset-1">
+                Columna #1
+            </div>
+            <div class="columna col-auto offset-3">
+                Columna #2
+            </div>
+        </div>
+        <div class="row ">
+            <div class="columna col-auto offset-1 offset-md-4 offset-lg-0">
+                Columna #1
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
