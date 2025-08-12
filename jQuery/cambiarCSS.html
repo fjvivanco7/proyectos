@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambiar CSS</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <style>
+        a{
+            display: block;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        table{
+            text-align: center;
+            border: none;
+        }
+        td{
+            border: none;
+        }
+        #contieneEnlaces{
+            position: absolute;
+            left: 30px;
+            top: 65px;
+            width: 400px;
+            height: 650px;
+            z-index: 1;
+            padding-top: 100px;
+        }
+        .linkdestacacanciones{
+           color: cadetblue;
+           font-weight: bold;
+           margin-left: 25px;
+        }
+    </style>
+    <script>
+        $(function(){
+            $("a[href^='https://']").addClass("linkdestacacanciones");
+        });
+    </script>
+</head>
+
+<body>
+    <div id="contieneEnlaces">
+        <a href="https://youtu.be/7fE8WFn1yOc?list=RDGMEMQ1dJ7wXfLlqCjwV0xfSNbAVM7fE8WFn1yOc" target = "_blank" class = "canciones">Teeth - 5 Seconds Of Summer</a>
+        <br>
+        <a href="https://www.google.com" target="_blank" class="informacion">Google</a>
+        <br>
+        <a href="https://www.youtube.com/watch?v=2Vv-BfVoq4g" target="_blank" class="canciones">Ed Sheran - Perfect</a>
+        <br>
+        <a href="calculadora.html" target="_blank">Calculadora</a>
+        <br>
+        <a href="https://news.google.com" target="_blank" class="informacion">Noticias de Google</a>
+        <br>
+        <a href="reemplazar.html" target="_blank">Reemplazar</a>
+    </div>
+    <table width="100%" border="1">
+        <tr>
+            <td>
+                 Canciones destacadas &nbsp; &nbsp; 
+                <input type="button" value="Canciones" id="canciones">
+            </td>
+            <td>
+                Información Adicional &nbsp; &nbsp; 
+                <input type="button" value="Información" id="informacion">
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

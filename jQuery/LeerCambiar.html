@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leer y Cambiar atributos HTML</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <style>
+        img{
+            width: 550px;
+            height: 600px;
+            text-align: center;
+        }
+    </style>
+    <script>
+        $(function(){
+            document.getElementById("img1").addEventListener("mouseover", cambiar, false);  
+            document.getElementById("img1").addEventListener("mouseout", restaurar, false);            
+        });
+
+        function cambiar(){
+            $("#img1").attr("src", "goku.jpg")
+        }
+
+        function restaurar(){
+            $("#img1").attr("src", "amor.jpg");
+        }
+    </script>
+</head>
+
+<body>
+    <img src="cat.jpg" id="img1">
+</body>
+</html>
