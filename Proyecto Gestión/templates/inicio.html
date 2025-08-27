@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>Home</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+  </script>
+</head>
+
+<body>
+  <section class="vh-90" style="background-color: #96beb8">
+  <div style="text-align: center;">
+  <img src="https://www.optimizacion-online.com/wp-content/uploads/2015/08/img1.jpg" alt="login form" class="img-fluid"
+    style="height: 375px;" />
+  </div>
+  <div class="container">
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <a class="nav-link active" id="catalogo-tab" data-toggle="tab" href="#catalogo" role="tab"
+          aria-controls="catalogo" aria-selected="true">Artículos</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link" id="repositorio-tab" data-toggle="tab" href="#repositorio" role="tab"
+          aria-controls="repositorio" aria-selected="false">Repositorio</a>
+      </li>
+    </ul>
+    <div class="tab-content">
+      <div class="tab-pane fade show active" id="catalogo" role="tabpanel" aria-labelledby="catalogo-tab">
+        <form class="form-inline" target="_blank" action="http://koha.adminkuhn.ch/cgi-bin/koha/opac-search.pl">
+          <label class="sr-only">Búsqueda</label>
+          <input type="text" class="form-control mt-3 col-md-10" placeholder="Búsque los articulos" name="q">
+          <button type="submit" class="btn btn-primary mt-3 col-md-2">Buscar</button>
+        </form>
+      </div>
+      <div class="tab-pane fade" id="repositorio" role="tabpanel" aria-labelledby="repositorio-tab">
+        <form class="form-inline" target="_blank" action="https://openknowledge.worldbank.org/">
+          <label class="sr-only">Búsqueda</label>
+          <input type="text" class="form-control mt-3 col-md-10" placeholder="Búsqueda en el repositorio" name="query">
+          <button type="submit" class="btn btn-primary mt-3 col-md-2">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+</body>
+
+</html>
